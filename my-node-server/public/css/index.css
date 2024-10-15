@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    font-family: century-gothic, sans-serif;;
+}
+.container{
+    margin: 0 100px;
+}
+
+ a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.header-page a:after {
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 1px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: black; /*цвет фона элемента*/
+    transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+.header-page a:hover:after,
+.header-page a:focus:after {
+    width: 100%;
+}
+.header-line{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-page{
+    display: flex;
+}
+.header-btn{
+    display: flex;
+}
+.header-page-mer, .header-page-contact, .header-page-bron{
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.header-btn-reg{
+    margin-left: 20px;
+}
+/*=====================================================*/
+.main-one{
+    background-color:#37CAD280;
+    padding: 30px 0;
+}
+.main-one-header{
+    padding: 0 100px;
+    font-weight: 600px;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.main-one-block{
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+}
+.one-block-1, .one-block-2, .one-block-3{
+    padding: 0 10px;
+    border-right: 1px solid #000000;
+} 
+.one-block-4{
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+/*=====================================================*/
+.main-two{
+    padding-top: 50px;
+}
+
+.slider-line-mer2,.slider-line-mer3,.slider-line-mer4,.slider-line-mer5,.slider-line-mer6,.slider-line-mer7{
+    margin-left: 20px;
+} 
+
+/*=====================================================*/
+.footer{
+    background-color:rgb(179, 179, 179);
+    width: auto;
+    height: 150px;
+    align-content: center;
+}
+.footer-line{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.footer-line-logo{
+    border-right: 1px solid #000000;
+    padding-right: 10px;
+}
+.footer-line-socia{
+    display: flex;
+    align-items:center
+}
+.footer-socia-mail, .footer-socia-tg, .footer-socia-wapp, .footer-socia-phone{
+    margin-left: 10px;
+} 
+.footer-socia-phone{
+    font-size: 20px;
+    font-weight: 600;
+}
+

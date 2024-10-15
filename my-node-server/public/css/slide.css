@@ -1,0 +1,29 @@
+body{
+    font-family: "Roboto Condense", sans-serif;
+}
+.header-slide{
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 36px;
+}
+.container-slide{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.slider{
+    overflow: hidden;
+    max-width: 1000px;
+}
+.slider-line{
+    display: flex;
+    transition: all ease 1s;
+}
+.slider-line img{
+    width: 500px;
+    height: auto;
+}
+
