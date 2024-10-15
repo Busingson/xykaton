@@ -41,18 +41,77 @@ body{
     font-size: 18px;
     margin-left: 20px;
 }
-.header-btn-reg{
+.header-btn-reg, .header-btn-colocol{
     margin-left: 20px;
+}
+.header{
+    border-bottom: 1px solid #000000;
 }
 /*=====================================================*/
 
+.anketa-title{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 37.8px;
+}
 
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.information-anketa input{
+    width: 300px;
+    height: 25px;
+    border: 1px solid;
+    border-color: rgba(93 93 93 /0.2);
+    border-radius:4px;
+}
+.information-anketa p{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18.2px;
+    letter-spacing: 1px;
+}
+.information-btn{
+    padding-top: 60px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.inf-submit{
+    width: 120px;
+    cursor: pointer;
+    opacity: 0;
+    position: absolute  ;
+}
+.send{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 1px;
+    color:#000000;
+    padding-right: 15px;
+}
+.colocol-flup{
+    margin-left: 400px;
+    width: 150px;
+    height: 200px;
+    padding: 10px 10px;
+    overflow: hidden; opacity: 0; transition: all 0s ease-in;
+}
+
+.main{
+    margin-bottom: 100px;
+}
 /*=====================================================*/
 .footer{
-    background-color:rgb(179, 179, 179);
+    /*background-color:rgb(179, 179, 179);*/
     width: auto;
     height: 150px;
     align-content: center;
+    border-top: 1px solid #000000;
 }
 .footer-line{
     display: flex;

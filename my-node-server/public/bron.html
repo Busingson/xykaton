@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сервис Бронирования</title>
     <link rel="stylesheet" href="css/bron.css">
+    <script src="scripts.js" defer></script>
 </head>
+
 <body>
     <div class="header">
         <div class="container">
@@ -21,29 +24,75 @@
                     <div class="header-page-contact">
                         <a href="bron.html">БРОНИРОВАНИЕ</a>
                     </div>
-                    <div class="header-page-bron">
-                        <a href="#">КОНТАКТЫ</a>
-                    </div>
                 </div>
 
                 <div class="header-btn">
-                    <div class="headre-btn-colocol">
+                    <div class="header-btn-tg">
+                        <a href="https://t.me/DomMolodo_bot"><img src="img/tg.png" alt="tg"></a>
+                    </div>
+                    <div class="header-btn-colocol">
                         <a href="#"><img src="img/colocol.png" alt="colocol"></a>
                     </div>
                     <div class="header-btn-reg">
-                        <a href="reg.htm"><img src="img/reg.png" alt="reg"></a>
+                        <a href="reg.html"><img src="img/reg.png" alt="reg"></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    БРОНИРОВАНИЕ
-    
+
+    <div class="main-content">
+        <div class="container">
+            <!-- Booking Section -->
+            <div class="booking-section">
+                <label for="booking-date">Выберите дату и время: </label>
+                <input type="datetime-local" id="booking-date" name="booking-date">
+                <div id="availability-check">Здесь будут отображены доступные даты и времена</div>
+            </div>
+
+            <!-- Event Details Form -->
+            <div class="event-form">
+                <label>Организатор: Дом молодежи</label>
+                <label for="event-name">Наименование мероприятия:</label>
+                <input type="text" id="event-name" name="event-name">
+                <label for="event-name">Место мероприятия:</label>
+                <input type="text" id="event-place" name="event-place">
+                <label for="event-name">Запланированно ли участие почетных гостей?</label>
+                <input type="text" list="options">
+                <datalist id="options">
+                <option value="Да">
+                <option value="Нет">
+                </datalist>
+                <label for="event-description">Описание мероприятия:</label>
+                <textarea id="event-description" name="event-description"></textarea>
+                <label for="expected-attendees">Планируемое количество человек:</label>
+                <input type="number" id="expected-attendees" name="expected-attendees">
+                <label for="required-equipment">Какая техника нужна:</label>
+                <input type="text" id="required-equipment" name="required-equipment">
+                <label for="comments">Комментарии:</label>
+                <textarea id="comments" name="comments"></textarea>
+                <div class = "check">
+                </div>
+                
+                <div class="information-btn">
+                    <input class="inf-submit" type="submit">
+                    
+                    <button id = "submitButton">
+                        <div class="send">
+                        ОТПРАВИТЬ
+                        </div>
+                    </button>
+                    <div id="notification"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
-    
+
+
     <div class="footer">
         <div class="container">
             <div class="footer-line">
@@ -53,7 +102,7 @@
 
                 <div class="footer-line-socia">
                     <div class="footer-socia-tg">
-                        <a href="https://t.me/DomMolodo_bot?startgroup" onclick="event.preventDefault()"><img src="img/tg.png" alt="tg"></a>
+                        <a href="https://t.me/DomMolodo_bot"><img src="img/tg.png" alt="tg"></a>
                     </div>
                     <div class="footer-socia-wapp">
                         <a href="#" onclick="event.preventDefault()"><img src="img/whatsapp.png" alt="wapp"></a>
@@ -68,6 +117,6 @@
             </div>
         </div>
     </div>
-    <script src="js/slide.js"></script>
 </body>
+<script src="js/slide.js"></script>
 </html>

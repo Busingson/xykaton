@@ -12,6 +12,10 @@ body{
     display: inline-block;
 }
 
+.header{
+    border-bottom: 1px solid #000000;
+}
+
 .header-page a:after {
     display: block; /*превращаем его в блочный элемент*/
     content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
@@ -41,18 +45,77 @@ body{
     font-size: 18px;
     margin-left: 20px;
 }
-.header-btn-reg{
+.header-btn-reg,.header-btn-colocol{
     margin-left: 20px;
 }
 /*=====================================================*/
 
 
+.shop {
+    padding: 10px;
+}
+
+.container-shop {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.shops {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shops-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(25% - 40px); /* 4 карточки в ряд */
+    transition: transform 0.3s;
+}
+
+.shops-card:hover {
+    transform: translateY(-5px);
+}
+
+.shops-card-img img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.shops-card-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.shops-card-subtitle {
+    font-size: 1em;
+    color: #666;
+}
+
+.shops-card-text {
+    font-size: 0.9em;
+    color: #444;
+    margin: 10px 0;
+}
+
+.shops-card-subtext a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+
 /*=====================================================*/
 .footer{
-    background-color:rgb(179, 179, 179);
+    /*background-color:rgb(179, 179, 179);*/
     width: auto;
     height: 150px;
     align-content: center;
+    border-top: 1px solid #000000;
 }
 .footer-line{
     display: flex;

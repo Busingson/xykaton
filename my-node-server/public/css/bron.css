@@ -41,18 +41,88 @@ body{
     font-size: 18px;
     margin-left: 20px;
 }
-.header-btn-reg{
+.header-btn-reg,.header-btn-colocol{
     margin-left: 20px;
 }
+.header{
+    border-bottom: 1px solid #000000;
+}
 /*=====================================================*/
+.main-content{
+    margin: 50px 0;
+}
+.subheading {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
 
+.image-slider {
+    display: flex;
+    gap: 20px;
+}
+
+.slider-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.booking-section,
+.event-form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.check{
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#availability-check {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.information-btn{
+    padding-top: 60px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.inf-submit{
+    width: 120px;
+    cursor: pointer;
+    opacity: 0;
+    position: absolute  ;
+}
+.send{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 1px;
+    color:#000000;
+    padding-right: 15px;
+}
 
 /*=====================================================*/
 .footer{
-    background-color:rgb(179, 179, 179);
+    /*background-color:rgb(179, 179, 179);*/
     width: auto;
     height: 150px;
     align-content: center;
+    border-top: 1px solid #000000;
 }
 .footer-line{
     display: flex;
@@ -75,3 +145,28 @@ body{
     font-weight: 600;
 }
 
+
+
+
+#notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимированное уведомление</title>
+    <style>
+        #notification {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        @keyframes fadein {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes fadeout {
+            from {opacity: 1;}
+            to {opacity: 0;}
+        }
+    </style>
+    <script>
+        function showNotification() {
+            const notification = document.getElementById("notification");
+            /*
+            сюда можно вставить блок проверки условия срабатывания
+
+            и блок "отправки" самой заявки на СУБД и почту
+            */
+            notification.style.display = "block";
+
+            setTimeout(() => {
+                notification.style.display = "none";
+            }, 3000); // Уведомление будет показано 3 секунды
+        }
+    </script>
+</head>
+<body>
+    <h1>Форма заявки</h1>
+    <button onclick="showNotification()">Отправить</button>
+
+    <div id="notification">Заявка отправлена!</div>
+</body>
+</html>

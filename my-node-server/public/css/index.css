@@ -41,13 +41,16 @@ body{
     font-size: 18px;
     margin-left: 20px;
 }
-.header-btn-reg{
+.header-btn-reg, .header-btn-colocol{
     margin-left: 20px;
+}
+.header{
+    border-bottom: 1px solid #000000;
 }
 /*=====================================================*/
 .main-one{
-    background-color:#37CAD280;
-    padding: 30px 0;
+    /*background-color:#37CAD280;*/
+    padding: 80px 0;
 }
 .main-one-header{
     padding: 0 100px;
@@ -77,7 +80,8 @@ body{
 
 /*=====================================================*/
 .main-two{
-    padding-top: 50px;
+    padding: 50px 0;
+
 }
 
 .slider-line-mer2,.slider-line-mer3,.slider-line-mer4,.slider-line-mer5,.slider-line-mer6,.slider-line-mer7{
@@ -86,10 +90,11 @@ body{
 
 /*=====================================================*/
 .footer{
-    background-color:rgb(179, 179, 179);
+    /*background-color:rgb(179, 179, 179);*/
     width: auto;
     height: 150px;
     align-content: center;
+    border-top: 1px solid #000000;
 }
 .footer-line{
     display: flex;

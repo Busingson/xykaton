@@ -21,3 +21,5 @@ document.querySelector('.btn-right').addEventListener('click',()=>{
     }
     rollSlider();
 });
+
+//--------------------------------------

@@ -70,21 +70,6 @@ app.listen(PORT, () => {
 // });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 exports.opendb = function(settings, callback){    
     let mongo = require('mongodb'), // требуется замена на нашу базу данных
